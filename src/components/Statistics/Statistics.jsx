@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 
-const Statistics = ({good, neutral, bad, total, positive}) => {
+const Statistics = ({good, neutral, bad, total, positive, index}) => {
     return(
-        <ul>
+        <ul key={index}>
             <li>Good:{good}</li>
             <li>Neutral:{neutral}</li>
             <li>Bad:{bad}</li>
